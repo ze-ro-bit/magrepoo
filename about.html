@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" height="100px" width="100px"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- CLOSE ICON -->
+                <i class="bi bi-x-circle-fill" style="color: white;" onclick="hideMenu()"></i>  
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                    <li><a href="book.html">BOOKS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="feedback.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- MENU ICON -->
+            <i class="bi bi-list" style="color: white;" onclick="showMenu()"></i>
+        </nav>
+        
+
+
+
+
+<!-- ABOUT -->
+<div class="about" id="about" >
+    <h1 style="color: white;"> <b> ABOUT US </b></h1>
+    <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+       repellat officia quidem, dicta natus cum nemo a quisquam neque 
+       ad minus, tempora atque ipsum voluptate ipsa laboriosam 
+       eveniet? Perspiciatis, molestias.</p>
+    
+       <div class="row">
+
+        <div class="about-col" style="background-color: beige;">
+          <img src="images/tech.png">
+          <h3 >FUTURE WITH ARTIFICIAL INTELLIGENCE</h3>
+          <p >Digital life is augmenting human capacities and disrupting eons-old human
+             activities. Code-driven systems have spread to more than half of the world’s inhabitants in ambient
+              information and connectivity, offering previously unimagined opportunities and unprecedented threats.
+              </p>
+            <center><a href="https://www.pewresearch.org/internet/2018/12/10/artificial-intelligence-and-the-future-of-humans/" target="_blank" class="open-btn" style="color: black;">Read More</a></center>
+        </div>
+
+        <div class="about-col" style="background-color: beige;">
+          <img src="images/aa.jpg">
+          <h3 >MACHINERY / ROBOT</h3>
+          <p >Roboticists are nowhere near achieving this level of artificial intelligence, but they have made a lot of progress with more limited AI. Today's AI
+             machines can replicate some specific elements of intellectual ability.
+            Computers can already solve problems in limited realms. The basic idea of AI
+             problem-solving is simple, though its execution is complicated.  </p>
+            <center><a href="https://science.howstuffworks.com/robot6.htm" target="_blank" class="open-btn" style="color: black;">Read More</a></center>
+        </div>
+
+        <div class="about-col" style="background-color: beige;">
+          <img src="images/open.png">
+          <h3>OPEN AI</h3>
+          <p >OpenAI’s new tool can make mistakes and is a work in progress, company employees Jan 
+            Hendrik Kirchner, Lama Ahmad, Scott Aaronson and Jan Leike wrote in a blog post, noting that OpenAI would like 
+            feedback on the classifier from parents and teachers.</p>
+            <center><a href="https://www.cnbc.com/2023/01/31/openai-launches-classifier-for-text-written-by-ai-after-chatgpt-buzz.html" target="_blank" class="open-btn" style="color: black;">Read More</a></center>
+        </div>
+
+       </div>
+
+      
+</div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    
+
+<!-- JAVASCRIPT FOR MENU -->
+<script> 
+    navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
